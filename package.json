@@ -4,6 +4,11 @@
   "description": "SDK for interacting with Eden.art",
   "main": "eden.js",
   "type": "module",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +26,9 @@
     "axios": "^1.2.4",
     "dotenv": "^16.0.3",
     "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
   }
 }
